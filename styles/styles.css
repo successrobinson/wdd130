@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+
+:root {
+    --heading-border-top: 1px; 
+    --heading-text-align: center;
+    --heading-height: auto;
+}
+
+nav{
+    background-color: darkblue;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+h1 {
+    color: darkblue;
+    padding: 5rem;
+}
+
+aside {
+    width: 20rem;
+    text-align: var(--heading-text-align);
+    position: relative;
+
+}
+
+aside img {
+    width: 200px;
+    height: var(--heading-height);
+}
+
+
+aside h2 {
+    position:absolute;
+    top: 25px;
+    left: 150px;
+}
+
+main img{
+    float: right;
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    margin: 0 0 1rem 1rem ;
+
+}
+
+p {
+    margin: 1rem;
+}
+
+main {
+    max-width: 640px;
+    height: var(--heading-height);
+}
+
+p {padding: 0;}
+
+footer {
+    margin-top: 15px;
+    border-top: var(--heading-border-top) solid #000;
+    text-align: var(--heading-text-align);
+}
+
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(red, green, blue);
+    padding: 1rem;
+    background-color: #eee;
+    color: #000;
+}
+
+
+.indent {
+    padding-left: 1rem;
+}
