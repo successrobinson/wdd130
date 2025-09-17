@@ -38,9 +38,14 @@ h1 {
 }
 
 img {
+    /* width: 150px;
+    height: auto;
+    border: 1px solid black; */
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid black;   /* example */
+    padding: 5px;              /* example */
+    box-shadow: 2px 2px 5px gray; /* example */
 
 }
 
