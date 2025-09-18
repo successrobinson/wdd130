@@ -16,6 +16,9 @@ main  {
 main img {
     width: 150px;
     height: auto;
+    border: 2px solid black;
+    padding: 5px;
+    box-shadow: 2px 2px 6px gray;
 }
 
 aside {
@@ -38,14 +41,9 @@ h1 {
 }
 
 img {
-    /* width: 150px;
-    height: auto;
-    border: 1px solid black; */
     width: 150px;
     height: auto;
-    border: 1px solid black;   /* example */
-    padding: 5px;              /* example */
-    box-shadow: 2px 2px 5px gray; /* example */
+    border: 1px solid black;
 
 }
 
