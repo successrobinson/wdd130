@@ -19,11 +19,152 @@
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+header {
+    height: 90px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:var(--accent1-color) ;
+    padding: 8px 14px;
+    border-radius: 4px;
+    transition: background 0.3s;
+
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: var(--accent2-color);
+    color: var(--accent2-color);
 }
 
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+}
+
+.history {
+    padding: 60px 20px;
+    background-color: #f0f0f0;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Use flex for two-column layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; 
+}
+
+.history h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.history-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px; /* space between text and image block */
+    width: 100%;
+
+}
+
+.text-block {
+    flex: 2;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.text-block p {
+    margin-bottom: 1rem; /* space between paragraphs*/
+    line-height: 1.5;
+
+}
+
+.image-block {
+    flex: 1;
+    text-align: center;
+    max-width: 200px;
+}
+
+
+.image-block img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px; /* Adjust to match wireframe icon size approxmation*/
+
+    /* optional: Add a border or background to mimic the wireframe placeholder style*/
+    border: 2px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+
+}
+
+/* Responsiveness*/
+@media (max-width: 768px) {
+    .history-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .image-block {
+        max-width: 150px;
+    }
+    .history {
+        padding: 30px 10px;
+    }
+}
+
+
+.adventure {
+    padding: 60px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; */
+}
+
+.image-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+padding: 20px;
+max-width: 1200px;
+margin: 0 auto;
+
+}
+
+.small-image {
+    text-align: center;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 1%;
+    background-image: var(--accent1-color);
+}
+
+.small-image img {
+    width: 100%;
+    height: auto;
+}
+
+.small-image p {
+    margin: 5px 0;
 }
 
 header, main, footer {
@@ -41,51 +182,70 @@ nav, p, section, article {
     padding: 8px;
 }
 
+
 .socialmedia a {
     text-decoration: none;
 }
 
 .hero {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    background-image: var(--accent1-color);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    margin-top: 5px;
 }
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
+.hero-overlay {
+    background-color: var(--accent1-color); 
+    padding: 40px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.hero article {
+.hero-overlay h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-overlay article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-overlay img {
+    max-width: 100px;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.hero-overlay p {
+    margin: 0;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+
+.established-badge {
     position: absolute;
-    bottom: 20px; /* or top: 20px; */
-    left: 20px;
-    right: 20px;       /* keeps spacing on the right too */
-    background-color: var(--accent1-color); /* same highlight color */
-    opacity: 0.8;      /* slightly see-through */
-    padding: 16px;     /* space inside */
-    color: #fff;       /* white text for contrast */
-    border-radius: 8px; /* optional: rounded corners */
+    bottom: 20px;
+    right: 20px;
+    background-color: #800080;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
 }
 
 
 
-.hero article img {
-    float: right;
-    width: 125px;
-    margin-left: 10px; /* space between text and image */
-    border-radius: 4px; /* optional: soften corners */
-}
 
 
 /* footer {

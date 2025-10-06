@@ -33,7 +33,7 @@ div {
 .grid {
     background-color: #abb;
     display: grid;
-    place-items: centre;
+    place-items: center;
     /* enter declarations here */
 
 }
@@ -54,6 +54,7 @@ div {
     /* write declarations here */
     display: grid;
     grid-template-columns: 1fr  1fr 1fr;
+    gap: 10px;
 }
 
 .columns-3 {
