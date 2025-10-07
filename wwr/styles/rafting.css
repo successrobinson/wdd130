@@ -109,19 +109,19 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 30px; /* space between text and image block */
-    /* width: 100%; */
+    gap: 30px; /* space between text and image block 
+     width: 100%; */
 
 
 /* .text-block {
     flex: 1;
     padding: 0;
     font-size: 1rem;
-}
+}*/
 
-.text-block p {
-    margin-bottom: 1rem; /* space between paragraphs*/
-    /* line-height: 1.5; */
+/*.text-block p {
+    margin-bottom: 1rem;  space between paragraphs
+    line-height: 1.5; */
 
 
 /* 
@@ -135,19 +135,19 @@ body {
 .image-block img {
     max-width: 100%;
     height: auto;
-    max-height: 200px; Adjust to match wireframe icon size approxmation */
+    max-height: 200px; Adjust to match wireframe icon size approxmation 
 
-    /* optional: Add a border or background to mimic the wireframe placeholder style*/
-    /* border: 2px solid #ddd;
+    optional: Add a border or background to mimic the wireframe placeholder style
+    border: 2px solid #ddd;
     padding: 10px;
-    background-color: #fff; */ */
+    background-color: #fff; */
 
 
 
 
 
 
-/* Responsiveness
+/* Responsiveness */
 @media (max-width: 768px) {
 .history-content {
         flex-direction: column;
@@ -159,7 +159,7 @@ body {
     .history {
         padding: 30px 10px;
     }
-} */
+}
 
 
 .adventure {
