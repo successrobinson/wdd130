@@ -147,7 +147,7 @@ body {
 
 
 
-/* Responsiveness*/
+/* Responsiveness
 @media (max-width: 768px) {
 .history-content {
         flex-direction: column;
@@ -159,7 +159,7 @@ body {
     .history {
         padding: 30px 10px;
     }
-}
+} */
 
 
 .adventure {
